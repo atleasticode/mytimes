@@ -2,15 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Georgia, serif;
 }
 
 p {
-  font-size: 20px;
-  padding-top: 20px;
+  font-size: 17px;
+  padding: 10px 0;
 }
 
 h3 {
   font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 /* Header */
@@ -48,13 +55,13 @@ h3 {
 
 .navigation span {
   display: inline-block;
-  font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   padding: 0 20px;
 }
 
 .navigation a {
+  font-family: Verdana;
   color: black;
 }
 
@@ -63,13 +70,24 @@ h3 {
 
 .content {
   position:relative;
-  top: 100px;
+  top: 80px;
+  margin-bottom: 150px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.post {
+  padding: 20px;
+}
+
+#earth, #camera, #cat {
+  display: flex;
+  align-items: center;
 }
 
 .column.large {
@@ -84,23 +102,30 @@ h3 {
   width: 240px;
 }
 
+
+/* Large Column */
+
+
+.breaking h2 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+#breaking-img {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/main.png);
+  height: 300px;
+}
+
 .various {
   display: flex;
   align-content: space-between;
 }
 
-.breaking h2 {
-  font-size: 40px;
-  text-align: center;
-  background-image: url(../img/main.png);
-  height: 300px;
-  color: white;
-  padding: 70px 20px;
-}
 
-.post {
-  padding: 20px;
-}
+/* Medium Column */
 
 #earth {
   background-image: url(../img/story-2.png);
@@ -115,4 +140,55 @@ h3 {
 #cat {
   background-image: url(../img/story-1.png);
   height: 300px;
+}
+
+/* Small Column */
+.featured {
+  display: flex;
+  flex-direction: column;
+  background-color: WhiteSmoke;
+  color: DimGray;
+}
+
+#bites {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.featured p {
+  font-family: Verdana;
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  padding-left: 15px;
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+.footer h6 {
+  font-size: 20px;
+  color: white;
+  display: inline;
+}
+
+.footer a, p {
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.footer a {
+  color: black;
+  padding: 0 10px;
+  display: inline;
 }
